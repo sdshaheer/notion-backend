@@ -17,12 +17,12 @@ const defaultRoutes = [
     {
         path: '/task',
         route: taskRoute,
-        middlewares: [mongoAuthMiddleware]
+        middlewares: [firebaseAuthMiddleware, mongoAuthMiddleware]
     },
     {
         path: '/todo',
         route: todoRoute,
-        middlewares: [mongoAuthMiddleware]
+        middlewares: [firebaseAuthMiddleware, mongoAuthMiddleware]
     },
 
 ];
